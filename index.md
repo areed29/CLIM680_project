@@ -12,7 +12,7 @@ Monthly means of the NAO index, from 1948-2021 are utilized to calculate composi
 # Results and Analysis
 ### Project Notebook via Github
 This jupyter notebook file, located in my CLIM680_project repository, contains all of the commented code that is used to fufill all aspects of the project.
-Link: https://github.com/areed29/CLIM680_project/blob/master/Final_project.ipynb 
+Link: https://github.com/areed29/CLIM680_project/blob/master/Final_project.ipynb - automatic! 
 ### Conda Environment 
 The environment.yml file is shown to define the environment needed to run all code successfully. 
 ### Figures
