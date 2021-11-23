@@ -14,36 +14,36 @@ Monthly means of the detrended AMO index, from 1979-2020 are utilized to calcula
 # Results and Analysis
 ### Project Notebook via Github
 Located within my CLIM680_project repository is a series of jupyter notebooks that contain all of the labeled and commented code that was used in my analysis. 
-[Link:] (https://github.com/areed29/CLIM680_project/) 
+[Link:](https://github.com/areed29/CLIM680_project/) 
 Each topic will be discussed, along with a link to each relevant notebook. 
 ### Conda Environment 
 The environment.yml file is shown to define the environment needed to run all code successfully. 
 ### Function creation
 A function was created to calculate climatologies and anomalies, labeled as ___ in each jupyter notebook. This is in addition to the clim680 function generated in class to calculate xyticks.
-Link to function: https://github.com/areed29/CLIM680_project/blob/master/clim680_function.py
+[Link to function:](https://github.com/areed29/CLIM680_project/blob/master/clim680_function.py)
 ### Figures
 The figures from my project notebook are saved in a seperate 'figures' subdirectory, as well as shown in the project notebook.
-Link to figures: https://github.com/areed29/CLIM680_project/tree/master/figures
+[Link to figures:](https://github.com/areed29/CLIM680_project/tree/master/figures)
 ### Climatology and Anomalies 
 A panel plot of the climatology of monthly averaged precipitation (in meters), monthly averaged cloud cover, and monthly averaged precipitable water was plotted for each month, in order to observe differences in the monthly/seasonal cycle, and spatial variability. The largest amount of cloud cover is located around 0-20S in DJF, gradually shifting north by MAM, and then furthest north in a band between 5S-15N by the JJA rainy season. Precipitable water shows similar patterns, with highest values concentrated near the Gulf of Ginuea. The precipitation climatology also shows this northward shift in the rainy season.
 
-Jupyter notebook link: https://github.com/areed29/CLIM680_project/blob/master/Africamonthlyclimo_assignment2.ipynb
+[Jupyter notebook link:](https://github.com/areed29/CLIM680_project/blob/master/Africamonthlyclimo_assignment2.ipynb)
 ### Subsetting: Exploring Climatology/Anomalies for Sahel region
 For the Sahel lat/lon point of 15N,10E, the climatology was compared with data for the starting and ending years of the dataset (1979 and 2020) for each variable. For precipitation and precipitable water, the peak in climatology comes during the midst of the rainy season during the months of JJA. Cloud cover is the most variable over each month, still peaking on average in the rainy season. The anomaly space is then visualized for each of the 3 variables for the Sahel grid point, with a best-fit trend line superimposed over each time series. The most significant trend is for cloud cover anomalies over the Sahel region, with a trend of 0.03 (fraction/month).
 
-Jupyter notebook link: https://github.com/areed29/CLIM680_project/blob/master/Sahel_climo_anoms.ipynb
+[Jupyter notebook link:](https://github.com/areed29/CLIM680_project/blob/master/Sahel_climo_anoms.ipynb)
 ### Composites and mean differences with AMO
 Next, composite analysis is performed on continetal Africa precipitation anomalies with the detrended AMO index. Warm and cold AMO events are respectively categorized as an SSTA (Sea Surface Temperature Anomaly) as being greater than or less than 0. For the precipitation data, the climatology and anomlaies were calculated exclusively for land data, masking out grid cells in the domain for the ocean. Precipitation anomalies were then normalized by the standard deviation, in order to reduce data redundancy and create unitless anomalies, which also makes comparison amongst variables easier. The precip anomalies were then selected according to if they matched a month containing a warm or cold AMO index, where a mean was then taken over the time dimension. Composite precipitation anomalies during warm and cold AMO events over continental Africa were plotted. The plot indicates that for warm AMO events, negative precipitation anomalies seem to be found from 5N-15S, with positive precipitation anomalies found in this region for cold AMO events. A plot of mean differences between warm AMO precip composites and cold AMO precip composites was plotted, with areas of statistical significance hatched off using the 95th confidence interval. The resulting plot indicates statistically significant areas of composite precipitation differences between warm AMO and cold AMO events found in inland Africa from 5N- ~15S. I plan to further investigate the composite between AMO events and precipitation anomalies looking specifically at the JJA rainy season. 
 
-Jupyter notebook link: https://github.com/areed29/CLIM680_project/blob/master/AMO_composite.ipynb
+[Jupyter notebook link:](https://github.com/areed29/CLIM680_project/blob/master/AMO_composite.ipynb)
 ### Correlation Analysis with AMO
 For correlation analysis, correlation of each of the 3 variables (total cloud cover, total precipitation, and precipitable water) with the AMO index was investigated. After loading in the de-trended AMO index, precipitation data was selected to match the same amount of months as the AMO index. The dataset was once again masked to include only land values, with the resulting climatologies and anomalies calculated. Anomalies were once again normalzied by the standard deviation of each variable. A grid point representing the Sahel region was then selected to analyze correlation between normalized precipitation anomalies with the detrended AMO index. The correlation coefficient was determined to be 0.14, so it was determined that these 2 variables have a very weak linear relationship. This will motivate the next part of my project, as I will seperate the data into seasons, where I suspect that these 2 variables will become much more correlated. For each of the 3 variables, correlation with the AMO index was then plotted over the entire domain of Africa. From 0-10S, there seems to be a negative correlation between clouds and the AMO index and precip and the AMO index, with a weak correlation found in the Sahel region. For precipitable water, there is a somewhat stronger positive correlation found with the AMO index in the region from 10N-35N. Areas of statistical significance were then hatched off, and it was determined that blah blah.
 
-Jupyter notebook link: https://github.com/areed29/CLIM680_project/blob/master/CorrelationAnalysis_AMO_precip.ipynb
+[Jupyter notebook link:](https://github.com/areed29/CLIM680_project/blob/master/CorrelationAnalysis_AMO_precip.ipynb)
 ### Regression Analysis with AMO
 For linear regression analysis, anomalies were once again calculated for each of the 3 variables, first applied without any masking or weighting. Next, the anomalies were once again normalized by each variable's standard deviation. Then, the masking over land and area-weighting was applied. Weighting over the domain was applied using the cosine of the latitude. Using these normalized, masked, and area-weighted anomalies, a linear regression was applied between each of the 3 variables, as well as each of the variables with the AMO index. First, the regression was applied between the cloud cover anomaly and precipitation anomaly time series. A slope of 0.36 and r-squared value of 0.4 was found as a result. For a linear regression between precipitation anomalies and precipitable water anomalies, a slope of 1.04 was found, with an r-squared value of 0.19. Between cloud cover and precipitable water, a slope of 0.82 was found, with an r-squred value of 0.36. When each of these variables were regressed with the AMO index, negative trends were found for both precipitation anomalies and total cloud cover anomalies, with slopes of -0.27 and -0.06 respectively. The only variable that had a positive trend when regressed with the AMO index was precipitable water, with a slope value of 0.13. A panel plot map of linear regression with each of the 3 variables (total cloud cover, total precipitation, and precipitable water) is then shown, with significant regression coefficients at the 95th significance level indicated by the hatchings. Based on this map, blah blah blah.
 
-Jupyter notebook link:https://github.com/areed29/CLIM680_project/blob/master/Regression_Analysis_AMO_precip.ipynb
+[Jupyter notebook link:](https://github.com/areed29/CLIM680_project/blob/master/Regression_Analysis_AMO_precip.ipynb)
 # Summary
 In summary, 
 
