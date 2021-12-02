@@ -37,11 +37,11 @@ The figures from my project notebook are saved in a seperate 'figures' subdirect
 
 A panel plot of the climatology of monthly averaged precipitation (in meters), monthly averaged cloud cover, and monthly averaged precipitable water (in kg/m^2) was plotted for each month, in order to observe differences in the monthly/seasonal cycle, and spatial variability. The largest amount of cloud cover is located around 0-20S in DJF, gradually shifting north by MAM, and then furthest north in a band between 5S-15N by the JJA rainy season. Precipitable water shows similar patterns, with highest values concentrated near the Gulf of Ginuea. The precipitation climatology also shows this northward shift in the rainy season.
 
-![Climatology of Monthly averaged cloud cover over Africa](https://github.com/areed29/CLIM680_project/tree/master/figures/12panelclimo_clouds.png)
+![Climatology of Monthly averaged cloud cover over Africa](figures/12panelclimo_clouds.png)
 
-![Climatology of Monthly averaged Precipitation over Africa (in meters)](https://github.com/areed29/CLIM680_project/tree/master/figures/12panelclimo_precip.png)
+![Climatology of Monthly averaged Precipitation over Africa (in meters)](figures/12panelclimo_precip.png)
 
-![Climatology of Monthly averaged cloud cover over Africa (in kg/m^2)](https://github.com/areed29/CLIM680_project/tree/master/figures/12panelclimo_tcwv.png)
+![Climatology of Monthly averaged cloud cover over Africa (in kg/m^2)](figures/12panelclimo_tcwv.png)
 
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/Africamonthlyclimo_assignment2.ipynb)
 ### Subsetting: Exploring Climatology/Anomalies for Sahel region
