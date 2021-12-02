@@ -53,7 +53,7 @@ A panel plot of the climatology of monthly averaged precipitation (in meters), m
 
 For the Sahel lat/lon point of 15N,10E, the climatology was compared with data for the starting and ending years of the dataset (1979 and 2020) for each variable. For precipitation and precipitable water, the peak in climatology comes during the midst of the rainy season during the months of JJA. Cloud cover is the most variable over each month, still peaking on average in the rainy season. The anomaly space is then visualized for each of the 3 variables for the Sahel grid point, with a best-fit trend line superimposed over each time series. The most significant trend is for cloud cover anomalies over the Sahel region, with a trend of 0.03 (fraction/month).
 
-![Sahel climatology](Sahel_climo.png)
+![Sahel climatology](figures/Sahel_climo.png)
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/Sahel_climo_anoms.ipynb)
 ### Composites and mean differences with AMO
 
