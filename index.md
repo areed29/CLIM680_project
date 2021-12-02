@@ -13,7 +13,7 @@ The datasets used in my project are:
 
 Replacing the ERA-interim reanalysis, ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. Using data from 1979 onwards, ERA5 provides monthly estimates for a large number of atmospheric, ocean-wave, and land-surface quantities. Data has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for the uncertainty estimate. 
 
-Variables utilized are 'total precipitation', the sum of large scale and convective precipitation that is the accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth's surface, with 1 day accumulation period for monthly averaged reanalysis. Units are meters. 'Total cloud cover' is also used as a dimensionless quantity that varies from 0 to 1, being the proportion of a grid box covered by cloud. 'Total column water vapor', more commonly called precipitable water, is also utilized, defined as the total amount of water vapor in a colun extending from the surface of the Earth to the top of the atmosphere. This is measured in kgm^-2. A land-sea mask, a dimensionless quantity, that represents the proportion of land, as opposed to ocean or inland waters in a grid box, is also utilized. Values above 0.5 can be comprised of a mixture of land and inland water, but not ocean(). 
+Variables utilized are 'total precipitation', the sum of large scale and convective precipitation that is the accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth's surface, with 1 day accumulation period for monthly averaged reanalysis. Units are meters. 'Total cloud cover' is also used as a dimensionless quantity that varies from 0 to 1, being the proportion of a grid box covered by cloud. 'Total column water vapor', more commonly called precipitable water, is also utilized, defined as the total amount of water vapor in a colun extending from the surface of the Earth to the top of the atmosphere. This is measured in kgm^-2. A land-sea mask, a dimensionless quantity, that represents the proportion of land, as opposed to ocean or inland waters in a grid box, is also utilized. Values above 0.5 can be comprised of a mixture of land and inland water, but not ocean (Hersbach et al 2019). 
 
 ### Atlantic Meridioal Oscillation (AMO) Index
 
@@ -27,14 +27,21 @@ Each topic will be discussed, along with a link to each relevant notebook.
 ### Conda Environment 
 The environment.yml file is shown to define the environment needed to run all code successfully. 
 ### Function creation
-A function was created to calculate climatologies and anomalies, labeled as ___ in each jupyter notebook. This is in addition to the clim680 function generated in class to calculate xyticks.
-[Link to function](https://github.com/areed29/CLIM680_project/blob/master/clim680_function.py)
+A function was created to calculate climatologies and anomalies in the file climo_anoms_function.py, labeled as climo and anoms in each jupyter notebook. This is in addition to the clim680 function generated in class to calculate xyticks.
+[Link to xyticks function](https://github.com/areed29/CLIM680_project/blob/master/clim680_function.py)
+[Link to climo,anoms function](https://github.com/areed29/CLIM680_project/blob/master/climo_anoms_function.py)
 ### Figures
 The figures from my project notebook are saved in a seperate 'figures' subdirectory, as well as shown in the project notebook.
 [Link to figures](https://github.com/areed29/CLIM680_project/tree/master/figures)
 ### Climatology and Anomalies 
 
-A panel plot of the climatology of monthly averaged precipitation (in meters), monthly averaged cloud cover, and monthly averaged precipitable water was plotted for each month, in order to observe differences in the monthly/seasonal cycle, and spatial variability. The largest amount of cloud cover is located around 0-20S in DJF, gradually shifting north by MAM, and then furthest north in a band between 5S-15N by the JJA rainy season. Precipitable water shows similar patterns, with highest values concentrated near the Gulf of Ginuea. The precipitation climatology also shows this northward shift in the rainy season.
+A panel plot of the climatology of monthly averaged precipitation (in meters), monthly averaged cloud cover, and monthly averaged precipitable water (in kg/m^2) was plotted for each month, in order to observe differences in the monthly/seasonal cycle, and spatial variability. The largest amount of cloud cover is located around 0-20S in DJF, gradually shifting north by MAM, and then furthest north in a band between 5S-15N by the JJA rainy season. Precipitable water shows similar patterns, with highest values concentrated near the Gulf of Ginuea. The precipitation climatology also shows this northward shift in the rainy season.
+
+![Climatology of Monthly averaged cloud cover over Africa](/homes/areed29/CLIM680_Fall2021/final_project/figures/12panelclimo_clouds)
+
+![Climatology of Monthly averaged Precipitation over Africa (in meters)](/homes/areed29/CLIM680_Fall2021/final_project/figures/12panelclimo_precip)
+
+![Climatology of Monthly averaged cloud cover over Africa (in kg/m^2)](/homes/areed29/CLIM680_Fall2021/final_project/figures/12panelclimo_tcwv)
 
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/Africamonthlyclimo_assignment2.ipynb)
 ### Subsetting: Exploring Climatology/Anomalies for Sahel region
@@ -77,3 +84,5 @@ Knight, J. R.,C. K. Folland, and A. A. Scaife (2006), Climate impacts of the Atl
 
 Pedgley, D. E., & Krishnamurti, T. N. (1976). Structure and Behavior of a Monsoon Cyclone over West Africa, Monthly Weather Review, 104(2), 149-167. Retrieved Dec 1, 2021, from https://journals.ametsoc.org/view/journals/mwre/104/2/1520-0493_1976_104_0149_saboam_2_0_co_2.xml
 
+# Acknowledgements
+I would like to thank both the CLIM680 instructors Prof. Dirmeyer and Prof. Burls for coding assistance and answering questions, as well as my advisor Prof. Kinter for dataset selection, project inspiration, and interesting discussions this semester.
