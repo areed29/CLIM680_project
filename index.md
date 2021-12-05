@@ -31,11 +31,13 @@ Each topic will be discussed seperately, along with a link to each relevant note
 The environment.yml file is shown to define the environment needed to run all code successfully. 
 ### Function creation
 A function was created to calculate climatologies and anomalies in the file climo_anoms_function.py, labeled as climo and anoms in each jupyter notebook. This is in addition to the clim680 function generated in class to calculate xyticks.
+
 [Link to xyticks function](https://github.com/areed29/CLIM680_project/blob/master/clim680_function.py)
 
 [Link to climo,anoms function](https://github.com/areed29/CLIM680_project/blob/master/climo_anoms_function.py)
 ### Figures
 The figures from my project notebook are saved in a seperate 'figures' subdirectory, as well as shown in the project notebook.
+
 [Link to figures](https://github.com/areed29/CLIM680_project/tree/master/figures)
 ### Climatology and Anomalies 
 
@@ -63,6 +65,7 @@ Next, composite analysis is performed on continetal Africa precipitation, precip
 
 
 ![Composites and mean differences with the AMO, with areas of statistical significance hatched off](figures/composite_anoms_differences_significance_allvars.png)
+
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/AMO_composite-all_vars.ipynb)
 ### Correlation Analysis with AMO
 
@@ -70,6 +73,7 @@ For correlation analysis, correlation of each of the 3 variables (total cloud co
 
 ![Sahel Time series of normalized AMO index with normalized precipitation anomalies](figures/Sahel_AMO_precip_timeseries.png)
 ![Correlation Analysis with the AMO, with areas of statistical significance hatched off](figures/Correlation_AMO_allanoms_withsig.png)
+
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/CorrelationAnalysis_AMO_precip.ipynb)
 ### Regression Analysis with AMO
 
@@ -82,6 +86,7 @@ For linear regression analysis, anomalies were once again calculated for each of
 
 ![Regression with precip and precipitable water](figures/regression_precip_tcwv.png)
 ![Regression Analysis with the AMO, with areas of statistical significance hatched off](figures/regressionmap_AMO_allanoms_withsig.png)
+
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/Regression_Analysis_AMO_precip.ipynb)
 # Summary, Discussion, and Future Work
 
