@@ -75,7 +75,9 @@ For linear regression analysis, anomalies were once again calculated for each of
 
 ![Normalized, Continental,Weighted Anomalies over Africa, with a best fit trend line](figures/cont_norm_weighted_anoms_withtrend.png)
 ![Regression with clouds and precip](figures/regression_clouds_precip.png)
+
 ![Regression with clouds and precipitable water](figures/regression_clouds_tcwv.png)
+
 ![Regression with precip and precipitable water](figures/regression_precip_tcwv.png)
 ![Regression Analysis with the AMO, with areas of statistical significance hatched off](figures/regressionmap_AMO_allanoms_withsig.png)
 [Jupyter notebook link](https://github.com/areed29/CLIM680_project/blob/master/Regression_Analysis_AMO_precip.ipynb)
