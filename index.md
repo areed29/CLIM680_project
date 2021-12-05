@@ -15,12 +15,14 @@ Replacing the ERA-interim reanalysis, ERA5 is the fifth generation ECMWF reanaly
 
 Variables utilized are 'total precipitation', the sum of large scale and convective precipitation that is the accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth's surface, with 1 day accumulation period for monthly averaged reanalysis. Units are meters. 'Total cloud cover' is also used as a dimensionless quantity that varies from 0 to 1, being the proportion of a grid box covered by cloud. 'Total column water vapor', more commonly called precipitable water, is also utilized, defined as the total amount of water vapor in a colun extending from the surface of the Earth to the top of the atmosphere. This is measured in kgm^-2. A land-sea mask, a dimensionless quantity, that represents the proportion of land, as opposed to ocean or inland waters in a grid box, is also utilized. Values above 0.5 can be comprised of a mixture of land and inland water, but not ocean (Hersbach et al 2019). 
 
+[Link to dataset description](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview)
 ### Atlantic Meridioal Oscillation (AMO) Index
 
 Monthly means of the detrended AMO index, from 1979-2020 are utilized to calculate composites for positive and negative AMO events with total precipitation over the African monsoon land region. This is further explored for the Sahel region, where worldwide SST anomalies are found to modulate summer Sahel rainfall.
 
 ![AMO Index (with warming signal)](figures/AMO_defined.png)
 
+[Link to NOAA PSL AMO index description](https://psl.noaa.gov/data/timeseries/AMO/)
 # Results and Analysis
 ### Project Notebook via Github
 Located within my CLIM680_project repository is a series of jupyter notebooks that contain all of the labeled and commented code that was used in my analysis. 
